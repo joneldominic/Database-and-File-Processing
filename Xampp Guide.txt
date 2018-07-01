@@ -1,0 +1,12 @@
+
+opening file in xamp = -u -root  -p
+showing database = show database
+creating database = create database nameofthedatabase;
+using the database = use nameofyoucreated_database;
+showing the category of you created database = show category;
+creating tabel category = create table category (catID int(11) PRIMARY KEY, catdesc varchar(30) not null);
+
+select * from category;  
+create product = creat table product (prodID int(11), catID int(11), prodname varchar(30), PRIMARY KEY(prodID), FORIEGN KEY(catID) references category (catID);
+show created product = describe product;
+insert product into the category = insert into category (catID,catdesc) values (1,'soap'),(2,'Junk Foods'),(3,'Shampoo');
